@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Keys } from './../../interfaces/keys';
 
 @Component({
   selector: 'app-key',

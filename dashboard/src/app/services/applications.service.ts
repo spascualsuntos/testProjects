@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Applications } from './intefaces/applications';
+import { Application } from './../interfaces/applications';
 
 let APPLICATIONS : Application[] = [
   {id: 1, name: 'Application uno'}
