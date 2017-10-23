@@ -14,8 +14,9 @@
     <!-- APPLICAITONS-->
     <accordion>
       <accordion-group heading="Applications">
-        <li>Application 1</li>
-        <li>Application 2</li>
+        <a *ngFor="let application of targetApplication" [routerLink]="['']">
+          <div>{{application.name}}</div>>
+        </a>> 
       </accordion-group>
     </accordion>
 

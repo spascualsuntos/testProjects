@@ -9,9 +9,12 @@ import { ApplicationsService } from './../../services/applications.service';
 })
 export class ApplicationComponent implements OnInit {
 
-  constructor() { }
+  targetApplication : Application[] = [];
+
+  constructor(private applicationsService : ApplicationsService) { }
 
   ngOnInit() {
+    this.targetApplication = this.applicationsService.getAll();
   }
 
 }

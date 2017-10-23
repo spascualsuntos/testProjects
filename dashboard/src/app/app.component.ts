@@ -9,9 +9,7 @@ import { ApplicationsService } from './services/applications.service';
   providers: [ApplicationsService]
 })
 export class AppComponent {
-
-  title = 'Suntos Configuration Manager';
-
+  
   public modalRef: BsModalRef;
   constructor(private modalService: BsModalService) {}
 

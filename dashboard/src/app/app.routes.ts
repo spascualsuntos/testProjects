@@ -4,17 +4,12 @@ import { KeyComponent } from './components/key/key.component';
 
 const routes : Routes = [
   {
-    path: 'applications',
+    path: '',
     component: ApplicationComponent,
   },
   {
     path: 'keys',
     component: KeyComponent,
-  },
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
   },
 ];
 
