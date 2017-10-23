@@ -4,60 +4,44 @@
       <a class="navbar-brand">
         <img src="assets/img/1.jpg" class="logo">
       </a>
-      <span class="navbar-brand">Suntos Configuration Manager</span>
+      <span class="navbar-brand">Suntos Configuration Manager [v1.0]</span>
     </div>
   </div>
 </nav>
 
-<div class="row">
-		<div class="col-sm-4 col-md-3 sidebar">
-    <div class="mini-submenu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </div>
-    <div class="list-group">
-        <span href="#" class="list-group-item active">
-            Submenu
-            <span class="pull-right" id="slide-submenu">
-                <i class="fa fa-times"></i>
-            </span>
-        </span>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-comment-o"></i> Lorem ipsum
-        </a>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-search"></i> Lorem ipsum
-        </a>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-user"></i> Lorem ipsum
-        </a>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-folder-open-o"></i> Lorem ipsum <span class="badge">14</span>
-        </a>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-bar-chart-o"></i> Lorem ipsumr <span class="badge">14</span>
-        </a>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-envelope"></i> Lorem ipsum
-        </a>
-    </div>  
+<body>
+  <table>
+    <!-- APPLICAITONS-->
+    <accordion>
+      <accordion-group heading="Applications">
+        <li>Application 1</li>
+        <li>Application 2</li>
+      </accordion-group>
+    </accordion>
 
-
+    <!-- USERS -->
+    <accordion>
+      <accordion-group heading="Users">
+        <li>Claudio Parrondo</li>
+        <li>Santiago Pascual</li>
+      </accordion-group>
+    </accordion>
+  </table>
+</body>
 
 
 <div>
-<button type="button" class="btn btn-info" (click)="openModal(template)">Create template modal</button>
+<button type="button" class="btn btn-info" (click)="openModal(template)">View latest updates</button>
 
    <ng-template #template>
        <div class="modal-header">
-           <h4 class="modal-title pull-left">Modal</h4>
+           <h4 class="modal-title pull-left">Latest updates:</h4>
            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
         <span aria-hidden="true">&times;</span>
       </button>
        </div>
        <div class="modal-body">
-           This is a modal.
+           <li>Application 1 => Key 1 => [TEST] Username => '[old] Claudio Parrondo : [new!] Conchita Parrondo'</li>
        </div>
    </ng-template>
 </div>

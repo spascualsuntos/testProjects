@@ -2,11 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppBootstrapModule } from './mods/app-bootstrap.module';
+import { AppBootstrapModule } from './modules/app-bootstrap.module';
+
+import { appRouterModule } from './modules/router';
+import { ApplicationComponent } from './components/application/application.component';
+import { KeyComponent } from './components/key/key.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ApplicationComponent,
+    KeyComponent
   ],
   imports: [
     BrowserModule,
